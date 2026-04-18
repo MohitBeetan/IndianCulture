@@ -1,16 +1,26 @@
-const express = require("express")
-const path = require("path")
-const app = express();
-app.use(express.static(path.join(__dirname, "public")))
+const express = require("express");
+const path = require("path");
 
+const app = express();
+const PORT = 3000;
+const PUBLIC_DIR = path.join(__dirname, "public");
+
+app.use((req, res, next) => {
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
+    next();
+});
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
     console.log("Home Page");
-})
+    res.sendFile(path.join(PUBLIC_DIR, "index.html"));
+});
 
+app.use(express.static(PUBLIC_DIR));
 
+app.use((req, res) => {
+    res.status(404).send("Page not found");
+});
 
-app.listen(3000, () => {
-    console.log("Server is Running on PORT:3000");
-})
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
