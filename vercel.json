@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "scerver.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "scerver.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

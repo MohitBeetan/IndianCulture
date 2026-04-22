@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon scerver.js",
-    "seed:states": "node scripts/seedStates.js"
+    "seed:states": "node scripts/seedStates.js",
+    "start": "node scerver.js"
   },
   "keywords": [],
   "author": "",
