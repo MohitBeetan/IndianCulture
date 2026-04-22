@@ -50,6 +50,21 @@ app.get("/api/state/:statename", async (req, res) => {
     }
 });
 
+app.get("/api/debug/states", async (req, res) => {
+    try {
+        await connectDB();
+        const count = await State.countDocuments();
+        const sample = await State.findOne().lean();
+        res.json({ 
+            total: count, 
+            sample: sample || "No states found",
+            mongoUri: process.env.MONGO_URI ? "✓ Set" : "✗ Not set" 
+        });
+    } catch (err) {
+        res.status(500).json({ error: err.message, mongoUri: process.env.MONGO_URI ? "✓ Set" : "✗ Not set" });
+    }
+});
+
 app.use((req, res) => {
     res.status(404).send("Page not found");
 });
