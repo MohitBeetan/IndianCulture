@@ -1,527 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bharat — The Soul of India</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharat — The Soul of India</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Cursor -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+  <!-- Nav -->
+  <nav>
+    <a href="#hero" class="nav-logo">भारत <span>Bharat</span></a>
+    <ul class="nav-links">
+      <li><a href="#history">History</a></li>
+      <li><a href="#culture">Culture</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#festivals">Festivals</a></li>
+      <li><a href="#cuisine">Cuisine</a></li>
+      <li><a href="#states">States</a></li>
+    </ul>
+  </nav>
 
-<!-- Nav -->
-<nav>
-  <a href="#hero" class="nav-logo">भारत <span>Bharat</span></a>
-  <ul class="nav-links">
-    <li><a href="#history">History</a></li>
-    <li><a href="#culture">Culture</a></li>
-    <li><a href="#architecture">Architecture</a></li>
-    <li><a href="#festivals">Festivals</a></li>
-    <li><a href="#cuisine">Cuisine</a></li>
-    <li><a href="#states">States</a></li>
-  </ul>
-</nav>
+  <!-- Page Indicator -->
+  <div class="page-indicator">
+    <div class="pi-dot active" onclick="scrollToSection('hero')"></div>
+    <div class="pi-dot" onclick="scrollToSection('history')"></div>
+    <div class="pi-dot" onclick="scrollToSection('culture')"></div>
+    <div class="pi-dot" onclick="scrollToSection('architecture')"></div>
+    <div class="pi-dot" onclick="scrollToSection('festivals')"></div>
+    <div class="pi-dot" onclick="scrollToSection('cuisine')"></div>
+    <div class="pi-dot" onclick="scrollToSection('states')"></div>
+    <div class="pi-dot" onclick="scrollToSection('philosophy')"></div>
+  </div>
 
-<!-- Page Indicator -->
-<div class="page-indicator">
-  <div class="pi-dot active" onclick="scrollToSection('hero')"></div>
-  <div class="pi-dot" onclick="scrollToSection('history')"></div>
-  <div class="pi-dot" onclick="scrollToSection('culture')"></div>
-  <div class="pi-dot" onclick="scrollToSection('architecture')"></div>
-  <div class="pi-dot" onclick="scrollToSection('festivals')"></div>
-  <div class="pi-dot" onclick="scrollToSection('cuisine')"></div>
-  <div class="pi-dot" onclick="scrollToSection('states')"></div>
-  <div class="pi-dot" onclick="scrollToSection('philosophy')"></div>
-</div>
-
-<!-- HERO -->
-<section id="hero" class="hero">
-  <div class="hero-bg-gradient"></div>
-  <svg class="hero-mandala" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-    <g fill="none" stroke="#C9962A" stroke-width="0.5" transform="translate(250,250)">
-      <circle r="40"/><circle r="80"/><circle r="120"/><circle r="160"/><circle r="200"/>
-      <circle r="240"/>
-      <g id="petal">
-        <ellipse rx="20" ry="60" cy="-100"/>
-        <ellipse rx="14" ry="40" cy="-140"/>
-        <ellipse rx="8" ry="24" cy="-168"/>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-gradient"></div>
+    <svg class="hero-mandala" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#C9962A" stroke-width="0.5" transform="translate(250,250)">
+        <circle r="40" />
+        <circle r="80" />
+        <circle r="120" />
+        <circle r="160" />
+        <circle r="200" />
+        <circle r="240" />
+        <g id="petal">
+          <ellipse rx="20" ry="60" cy="-100" />
+          <ellipse rx="14" ry="40" cy="-140" />
+          <ellipse rx="8" ry="24" cy="-168" />
+        </g>
+        <use href="#petal" transform="rotate(30)" />
+        <use href="#petal" transform="rotate(60)" />
+        <use href="#petal" transform="rotate(90)" />
+        <use href="#petal" transform="rotate(120)" />
+        <use href="#petal" transform="rotate(150)" />
+        <use href="#petal" transform="rotate(180)" />
+        <use href="#petal" transform="rotate(210)" />
+        <use href="#petal" transform="rotate(240)" />
+        <use href="#petal" transform="rotate(270)" />
+        <use href="#petal" transform="rotate(300)" />
+        <use href="#petal" transform="rotate(330)" />
+        <g id="diamond">
+          <polygon points="0,-200 12,-188 0,-176 -12,-188" />
+        </g>
+        <use href="#diamond" transform="rotate(15)" />
+        <use href="#diamond" transform="rotate(30)" />
+        <use href="#diamond" transform="rotate(45)" />
+        <use href="#diamond" transform="rotate(60)" />
+        <use href="#diamond" transform="rotate(75)" />
+        <use href="#diamond" transform="rotate(90)" />
+        <use href="#diamond" transform="rotate(105)" />
+        <use href="#diamond" transform="rotate(120)" />
+        <use href="#diamond" transform="rotate(135)" />
+        <use href="#diamond" transform="rotate(150)" />
+        <use href="#diamond" transform="rotate(165)" />
+        <use href="#diamond" transform="rotate(180)" />
+        <use href="#diamond" transform="rotate(195)" />
+        <use href="#diamond" transform="rotate(210)" />
+        <use href="#diamond" transform="rotate(225)" />
+        <use href="#diamond" transform="rotate(240)" />
+        <use href="#diamond" transform="rotate(255)" />
+        <use href="#diamond" transform="rotate(270)" />
+        <use href="#diamond" transform="rotate(285)" />
+        <use href="#diamond" transform="rotate(300)" />
+        <use href="#diamond" transform="rotate(315)" />
+        <use href="#diamond" transform="rotate(330)" />
+        <use href="#diamond" transform="rotate(345)" />
       </g>
-      <use href="#petal" transform="rotate(30)"/>
-      <use href="#petal" transform="rotate(60)"/>
-      <use href="#petal" transform="rotate(90)"/>
-      <use href="#petal" transform="rotate(120)"/>
-      <use href="#petal" transform="rotate(150)"/>
-      <use href="#petal" transform="rotate(180)"/>
-      <use href="#petal" transform="rotate(210)"/>
-      <use href="#petal" transform="rotate(240)"/>
-      <use href="#petal" transform="rotate(270)"/>
-      <use href="#petal" transform="rotate(300)"/>
-      <use href="#petal" transform="rotate(330)"/>
-      <g id="diamond">
-        <polygon points="0,-200 12,-188 0,-176 -12,-188"/>
-      </g>
-      <use href="#diamond" transform="rotate(15)"/>
-      <use href="#diamond" transform="rotate(30)"/>
-      <use href="#diamond" transform="rotate(45)"/>
-      <use href="#diamond" transform="rotate(60)"/>
-      <use href="#diamond" transform="rotate(75)"/>
-      <use href="#diamond" transform="rotate(90)"/>
-      <use href="#diamond" transform="rotate(105)"/>
-      <use href="#diamond" transform="rotate(120)"/>
-      <use href="#diamond" transform="rotate(135)"/>
-      <use href="#diamond" transform="rotate(150)"/>
-      <use href="#diamond" transform="rotate(165)"/>
-      <use href="#diamond" transform="rotate(180)"/>
-      <use href="#diamond" transform="rotate(195)"/>
-      <use href="#diamond" transform="rotate(210)"/>
-      <use href="#diamond" transform="rotate(225)"/>
-      <use href="#diamond" transform="rotate(240)"/>
-      <use href="#diamond" transform="rotate(255)"/>
-      <use href="#diamond" transform="rotate(270)"/>
-      <use href="#diamond" transform="rotate(285)"/>
-      <use href="#diamond" transform="rotate(300)"/>
-      <use href="#diamond" transform="rotate(315)"/>
-      <use href="#diamond" transform="rotate(330)"/>
-      <use href="#diamond" transform="rotate(345)"/>
-    </g>
-  </svg>
-  <div class="hero-border">
-    <div class="corner corner-tl">
-      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5"/>
-        <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none"/>
-        <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6"/>
-      </svg>
+    </svg>
+    <div class="hero-border">
+      <div class="corner corner-tl">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5" />
+          <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none" />
+          <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6" />
+        </svg>
+      </div>
+      <div class="corner corner-tr">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5" />
+          <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none" />
+          <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6" />
+        </svg>
+      </div>
+      <div class="corner corner-bl">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5" />
+          <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none" />
+          <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6" />
+        </svg>
+      </div>
+      <div class="corner corner-br">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5" />
+          <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none" />
+          <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6" />
+        </svg>
+      </div>
     </div>
-    <div class="corner corner-tr">
-      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5"/>
-        <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none"/>
-        <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6"/>
-      </svg>
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ The Eternal Civilization ✦</p>
+      <h1 class="hero-title">भारत<br><span class="accent">Bharat</span></h1>
+      <p class="hero-subtitle">India — Land of Ancient Wisdom</p>
+      <p class="hero-desc">A land where time flows like the sacred Ganges — carrying 5,000 years of civilization,
+        philosophy, art, and devotion to the sea of eternity.</p>
+      <a href="#history" class="hero-cta">Begin the Journey</a>
     </div>
-    <div class="corner corner-bl">
-      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5"/>
-        <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none"/>
-        <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6"/>
-      </svg>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll
     </div>
-    <div class="corner corner-br">
-      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 4 L4 30 M4 4 L30 4" stroke="#C9962A" stroke-width="1.5"/>
-        <path d="M4 4 L20 4 L20 20 L4 20 Z" stroke="#C9962A" stroke-width="0.5" fill="none"/>
-        <circle cx="12" cy="12" r="3" fill="#E8621A" opacity="0.6"/>
-      </svg>
+    <div class="hero-tricolor">
+      <div class="tc-saffron"></div>
+      <div class="tc-white"></div>
+      <div class="tc-green"></div>
     </div>
-  </div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">✦ The Eternal Civilization ✦</p>
-    <h1 class="hero-title">भारत<br><span class="accent">Bharat</span></h1>
-    <p class="hero-subtitle">India — Land of Ancient Wisdom</p>
-    <p class="hero-desc">A land where time flows like the sacred Ganges — carrying 5,000 years of civilization, philosophy, art, and devotion to the sea of eternity.</p>
-    <a href="#history" class="hero-cta">Begin the Journey</a>
-  </div>
-  <div class="scroll-hint">
-    <div class="scroll-line"></div>
-    Scroll
-  </div>
-  <div class="hero-tricolor">
-    <div class="tc-saffron"></div>
-    <div class="tc-white"></div>
-    <div class="tc-green"></div>
-  </div>
-</section>
+  </section>
 
-<!-- INTRO STRIP -->
-<div class="intro-strip">
-  <div class="strip-stat"><div class="num">5000+</div><div class="label">Years of Civilization</div></div>
-  <div class="strip-stat"><div class="num">28</div><div class="label">States & 8 UTs</div></div>
-  <div class="strip-stat"><div class="num">1600+</div><div class="label">Languages & Dialects</div></div>
-  <div class="strip-stat"><div class="num">40</div><div class="label">UNESCO World Heritage Sites</div></div>
-  <div class="strip-stat"><div class="num">6</div><div class="label">Major Religions Born Here</div></div>
-</div>
+  <!-- INTRO STRIP -->
+  <div class="intro-strip">
+    <div class="strip-stat">
+      <div class="num">5000+</div>
+      <div class="label">Years of Civilization</div>
+    </div>
+    <div class="strip-stat">
+      <div class="num">28</div>
+      <div class="label">States & 8 UTs</div>
+    </div>
+    <div class="strip-stat">
+      <div class="num">1600+</div>
+      <div class="label">Languages & Dialects</div>
+    </div>
+    <div class="strip-stat">
+      <div class="num">40</div>
+      <div class="label">UNESCO World Heritage Sites</div>
+    </div>
+    <div class="strip-stat">
+      <div class="num">6</div>
+      <div class="label">Major Religions Born Here</div>
+    </div>
+  </div>
 
-<!-- HISTORY -->
-<section id="history">
-  <div style="padding: 100px 60px;">
-    <p class="section-label">✦ The Story of Ages ✦</p>
-    <h2 class="section-title">A History Like No Other</h2>
+  <!-- HISTORY -->
+  <section id="history">
+    <div style="padding: 100px 60px;">
+      <p class="section-label">✦ The Story of Ages ✦</p>
+      <h2 class="section-title">A History Like No Other</h2>
+      <div class="section-divider"></div>
+      <p class="section-intro">From the banks of the Indus to the halls of independence, India's story is one of
+        resilience, genius, and unbroken continuity.</p>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-text">
+            <p class="tl-year">3300 – 1300 BCE</p>
+            <h3 class="tl-title">Indus Valley Civilization</h3>
+            <p class="tl-desc">One of the world's earliest urban civilizations, thriving in cities like Mohenjo-daro and
+              Harappa. Advanced drainage systems, standardized weights, and a script still undeciphered today — a
+              testament to remarkable sophistication.</p>
+          </div>
+          <div class="tl-dot"></div>
+          <div class="tl-spacer"></div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-spacer"></div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">
+            <p class="tl-year">1500 – 500 BCE</p>
+            <h3 class="tl-title">Vedic Age & Sacred Knowledge</h3>
+            <p class="tl-desc">The Vedas — among humanity's oldest scriptures — were composed in this era. Sanskrit
+              flourished, the caste system emerged, and the philosophical traditions of Hinduism, Buddhism, and Jainism
+              were born along the Gangetic plains.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-text">
+            <p class="tl-year">322 – 185 BCE</p>
+            <h3 class="tl-title">The Maurya Empire</h3>
+            <p class="tl-desc">Under Chandragupta Maurya and the visionary Emperor Ashoka, India experienced its first
+              great unification. Ashoka's Dhamma spread peace, religious tolerance, and the wheel of law — the Ashoka
+              Chakra — now at the heart of India's flag.</p>
+          </div>
+          <div class="tl-dot"></div>
+          <div class="tl-spacer"></div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-spacer"></div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">
+            <p class="tl-year">320 – 550 CE</p>
+            <h3 class="tl-title">The Gupta Golden Age</h3>
+            <p class="tl-desc">Mathematics (zero, decimal system), astronomy (earth's circumference), medicine
+              (Ayurveda), literature (Kalidasa), and the arts all flourished. The world's first universities like
+              Nalanda attracted scholars from China, Greece, and Persia.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-text">
+            <p class="tl-year">1526 – 1857 CE</p>
+            <h3 class="tl-title">The Mughal Era</h3>
+            <p class="tl-desc">A remarkable synthesis of Persian, Central Asian, and Indian cultures produced
+              breathtaking architecture (Taj Mahal, Red Fort), miniature painting, classical music (Hindustani
+              tradition), and rich literature. A civilization of unparalleled grandeur.</p>
+          </div>
+          <div class="tl-dot"></div>
+          <div class="tl-spacer"></div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-spacer"></div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">
+            <p class="tl-year">1947 CE</p>
+            <h3 class="tl-title">Independence — A Nation Reborn</h3>
+            <p class="tl-desc">On August 15, 1947, India gained independence from British rule through one of history's
+              greatest non-violent movements, led by Mahatma Gandhi. The world's largest democracy was born, with a
+              Constitution that enshrines equality, justice, and liberty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE -->
+  <section id="culture">
+    <p class="section-label" style="color: var(--gold);">✦ The Living Tapestry ✦</p>
+    <h2 class="section-title">Culture & Traditions</h2>
     <div class="section-divider"></div>
-    <p class="section-intro">From the banks of the Indus to the halls of independence, India's story is one of resilience, genius, and unbroken continuity.</p>
+    <p class="section-intro">India is not one culture — it is a magnificent mosaic of hundreds, each with its own
+      language, music, dance, dress, and devotion.</p>
 
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-text">
-          <p class="tl-year">3300 – 1300 BCE</p>
-          <h3 class="tl-title">Indus Valley Civilization</h3>
-          <p class="tl-desc">One of the world's earliest urban civilizations, thriving in cities like Mohenjo-daro and Harappa. Advanced drainage systems, standardized weights, and a script still undeciphered today — a testament to remarkable sophistication.</p>
+    <div class="culture-grid reveal">
+      <div class="culture-card">
+        <span class="card-icon">🎭</span>
+        <h3 class="card-title">Classical Dance Forms</h3>
+        <p class="card-text">India has eight classical dance forms recognized by the Sangeet Natak Akademi —
+          Bharatanatyam (Tamil Nadu), Kathak (North India), Odissi (Odisha), Kuchipudi (Andhra Pradesh), Manipuri,
+          Mohiniyattam, Kathakali, and Sattriya — each a sacred language of devotion in motion.</p>
+      </div>
+      <div class="culture-card">
+        <span class="card-icon">🎵</span>
+        <h3 class="card-title">Music — Divine & Earthly</h3>
+        <p class="card-text">Two classical traditions dominate: Hindustani (North) with its ragas and seasonal
+          compositions, and Carnatic (South) with its mathematical precision and bhakti devotion. Folk music ranges from
+          Punjabi Bhangra to Rajasthani Manganiyar to Kerala's Sopanam — an infinite sonic spectrum.</p>
+      </div>
+      <div class="culture-card">
+        <span class="card-icon">👘</span>
+        <h3 class="card-title">Textiles & Dress</h3>
+        <p class="card-text">India's textile legacy is unmatched — Banarasi silk weaving (2,000+ years old), Kanjivaram
+          silk from Tamil Nadu, Pashmina from Kashmir, Bandhani tie-dye from Gujarat, and Kantha embroidery from Bengal.
+          The saree — with over 80 draping styles — is perhaps humanity's most elegant garment.</p>
+      </div>
+      <div class="culture-card">
+        <span class="card-icon">🕉️</span>
+        <h3 class="card-title">Spirituality & Philosophy</h3>
+        <p class="card-text">Four major world religions were born in India — Hinduism, Buddhism, Jainism, and Sikhism.
+          Concepts like Ahimsa (non-violence), Karma, Dharma, Yoga, and Meditation originate here. India has always been
+          a land where seekers of truth converge from across the world.</p>
+      </div>
+      <div class="culture-card">
+        <span class="card-icon">🎨</span>
+        <h3 class="card-title">Art & Painting</h3>
+        <p class="card-text">From the 30,000-year-old cave paintings at Bhimbetka to the intricate Mughal miniatures,
+          from the tribal art of Warli and Madhubani to the vibrant canvases of Raja Ravi Varma — Indian art spans
+          millennia of unbroken creative expression, always rooted in narrative and meaning.</p>
+      </div>
+      <div class="culture-card">
+        <span class="card-icon">🏠</span>
+        <h3 class="card-title">Family & Social Values</h3>
+        <p class="card-text">The joint family system, reverence for elders, hospitality (Atithi Devo Bhava — "Guest is
+          God"), and seasonal rituals rooted in agricultural cycles define Indian social life. Community celebrations,
+          shared meals, and oral traditions bind generations across vast geographic diversity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section id="architecture">
+    <p class="section-label">✦ Stones That Speak ✦</p>
+    <h2 class="section-title">Art & Architecture</h2>
+    <div class="section-divider"></div>
+    <p class="section-intro">Indian architecture is not just construction — it is cosmology made visible, devotion made
+      tangible, and civilization made permanent.</p>
+
+    <div class="arch-showcase reveal">
+      <div class="arch-visual">
+        <div class="arch-visual-inner">
+          <span class="emoji">🕌</span>
+          <div class="label">Taj Mahal</div>
+          <div class="sublabel">Agra, Uttar Pradesh · 1632 CE</div>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-spacer"></div>
-        <div class="tl-dot"></div>
-        <div class="tl-text">
-          <p class="tl-year">1500 – 500 BCE</p>
-          <h3 class="tl-title">Vedic Age & Sacred Knowledge</h3>
-          <p class="tl-desc">The Vedas — among humanity's oldest scriptures — were composed in this era. Sanskrit flourished, the caste system emerged, and the philosophical traditions of Hinduism, Buddhism, and Jainism were born along the Gangetic plains.</p>
-        </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-text">
-          <p class="tl-year">322 – 185 BCE</p>
-          <h3 class="tl-title">The Maurya Empire</h3>
-          <p class="tl-desc">Under Chandragupta Maurya and the visionary Emperor Ashoka, India experienced its first great unification. Ashoka's Dhamma spread peace, religious tolerance, and the wheel of law — the Ashoka Chakra — now at the heart of India's flag.</p>
-        </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-spacer"></div>
-        <div class="tl-dot"></div>
-        <div class="tl-text">
-          <p class="tl-year">320 – 550 CE</p>
-          <h3 class="tl-title">The Gupta Golden Age</h3>
-          <p class="tl-desc">Mathematics (zero, decimal system), astronomy (earth's circumference), medicine (Ayurveda), literature (Kalidasa), and the arts all flourished. The world's first universities like Nalanda attracted scholars from China, Greece, and Persia.</p>
-        </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-text">
-          <p class="tl-year">1526 – 1857 CE</p>
-          <h3 class="tl-title">The Mughal Era</h3>
-          <p class="tl-desc">A remarkable synthesis of Persian, Central Asian, and Indian cultures produced breathtaking architecture (Taj Mahal, Red Fort), miniature painting, classical music (Hindustani tradition), and rich literature. A civilization of unparalleled grandeur.</p>
-        </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-spacer"></div>
-        <div class="tl-dot"></div>
-        <div class="tl-text">
-          <p class="tl-year">1947 CE</p>
-          <h3 class="tl-title">Independence — A Nation Reborn</h3>
-          <p class="tl-desc">On August 15, 1947, India gained independence from British rule through one of history's greatest non-violent movements, led by Mahatma Gandhi. The world's largest democracy was born, with a Constitution that enshrines equality, justice, and liberty.</p>
+      <div class="arch-info">
+        <h3>The Crown of Palaces</h3>
+        <p>Built by Emperor Shah Jahan as an eternal testament to love for his beloved Mumtaz Mahal, the Taj Mahal
+          stands as the world's most celebrated monument. Constructed from translucent Makrana marble that shifts from
+          pink at dawn to milky white at noon to golden under moonlight.</p>
+        <p>Over 20,000 artisans labored for 22 years (1632–1653), drawing from Persian, Islamic, and Hindu traditions.
+          Its perfect symmetry, intricate pietra dura inlay work with 28 precious stones, and the reflecting pool create
+          an experience that transcends architecture into pure poetry.</p>
+        <div class="arch-tags">
+          <span class="arch-tag">UNESCO World Heritage</span>
+          <span class="arch-tag">Mughal Architecture</span>
+          <span class="arch-tag">7 Wonders of the World</span>
+          <span class="arch-tag">Symbol of Love</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- CULTURE -->
-<section id="culture">
-  <p class="section-label" style="color: var(--gold);">✦ The Living Tapestry ✦</p>
-  <h2 class="section-title">Culture & Traditions</h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">India is not one culture — it is a magnificent mosaic of hundreds, each with its own language, music, dance, dress, and devotion.</p>
-
-  <div class="culture-grid reveal">
-    <div class="culture-card">
-      <span class="card-icon">🎭</span>
-      <h3 class="card-title">Classical Dance Forms</h3>
-      <p class="card-text">India has eight classical dance forms recognized by the Sangeet Natak Akademi — Bharatanatyam (Tamil Nadu), Kathak (North India), Odissi (Odisha), Kuchipudi (Andhra Pradesh), Manipuri, Mohiniyattam, Kathakali, and Sattriya — each a sacred language of devotion in motion.</p>
-    </div>
-    <div class="culture-card">
-      <span class="card-icon">🎵</span>
-      <h3 class="card-title">Music — Divine & Earthly</h3>
-      <p class="card-text">Two classical traditions dominate: Hindustani (North) with its ragas and seasonal compositions, and Carnatic (South) with its mathematical precision and bhakti devotion. Folk music ranges from Punjabi Bhangra to Rajasthani Manganiyar to Kerala's Sopanam — an infinite sonic spectrum.</p>
-    </div>
-    <div class="culture-card">
-      <span class="card-icon">👘</span>
-      <h3 class="card-title">Textiles & Dress</h3>
-      <p class="card-text">India's textile legacy is unmatched — Banarasi silk weaving (2,000+ years old), Kanjivaram silk from Tamil Nadu, Pashmina from Kashmir, Bandhani tie-dye from Gujarat, and Kantha embroidery from Bengal. The saree — with over 80 draping styles — is perhaps humanity's most elegant garment.</p>
-    </div>
-    <div class="culture-card">
-      <span class="card-icon">🕉️</span>
-      <h3 class="card-title">Spirituality & Philosophy</h3>
-      <p class="card-text">Four major world religions were born in India — Hinduism, Buddhism, Jainism, and Sikhism. Concepts like Ahimsa (non-violence), Karma, Dharma, Yoga, and Meditation originate here. India has always been a land where seekers of truth converge from across the world.</p>
-    </div>
-    <div class="culture-card">
-      <span class="card-icon">🎨</span>
-      <h3 class="card-title">Art & Painting</h3>
-      <p class="card-text">From the 30,000-year-old cave paintings at Bhimbetka to the intricate Mughal miniatures, from the tribal art of Warli and Madhubani to the vibrant canvases of Raja Ravi Varma — Indian art spans millennia of unbroken creative expression, always rooted in narrative and meaning.</p>
-    </div>
-    <div class="culture-card">
-      <span class="card-icon">🏠</span>
-      <h3 class="card-title">Family & Social Values</h3>
-      <p class="card-text">The joint family system, reverence for elders, hospitality (Atithi Devo Bhava — "Guest is God"), and seasonal rituals rooted in agricultural cycles define Indian social life. Community celebrations, shared meals, and oral traditions bind generations across vast geographic diversity.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ARCHITECTURE -->
-<section id="architecture">
-  <p class="section-label">✦ Stones That Speak ✦</p>
-  <h2 class="section-title">Art & Architecture</h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">Indian architecture is not just construction — it is cosmology made visible, devotion made tangible, and civilization made permanent.</p>
-
-  <div class="arch-showcase reveal">
-    <div class="arch-visual">
-      <div class="arch-visual-inner">
-        <span class="emoji">🕌</span>
-        <div class="label">Taj Mahal</div>
-        <div class="sublabel">Agra, Uttar Pradesh · 1632 CE</div>
+    <div class="arch-mini-grid reveal">
+      <div class="arch-mini">
+        <span class="mini-icon">🏯</span>
+        <h4>Rajput Forts</h4>
+        <p>Amber, Mehrangarh, Chittorgarh — medieval citadels of war, artistry, and royal life carved into Rajasthan's
+          rugged landscape.</p>
+      </div>
+      <div class="arch-mini">
+        <span class="mini-icon">🛕</span>
+        <h4>Dravidian Temples</h4>
+        <p>The towering gopurams of Madurai Meenakshi and Thanjavur Brihadeeswarar — South India's sky-piercing granite
+          devotion.</p>
+      </div>
+      <div class="arch-mini">
+        <span class="mini-icon">⛩️</span>
+        <h4>Rock-Cut Caves</h4>
+        <p>Ajanta, Ellora, Elephanta — Buddhist, Hindu, and Jain masterpieces carved directly from living rock over
+          centuries.</p>
+      </div>
+      <div class="arch-mini">
+        <span class="mini-icon">🏛️</span>
+        <h4>Stepwells (Vav)</h4>
+        <p>Gujarat's Rani ki Vav — a subterranean cathedral of water, with 500 intricate sculptures descending seven
+          stories below earth.</p>
       </div>
     </div>
-    <div class="arch-info">
-      <h3>The Crown of Palaces</h3>
-      <p>Built by Emperor Shah Jahan as an eternal testament to love for his beloved Mumtaz Mahal, the Taj Mahal stands as the world's most celebrated monument. Constructed from translucent Makrana marble that shifts from pink at dawn to milky white at noon to golden under moonlight.</p>
-      <p>Over 20,000 artisans labored for 22 years (1632–1653), drawing from Persian, Islamic, and Hindu traditions. Its perfect symmetry, intricate pietra dura inlay work with 28 precious stones, and the reflecting pool create an experience that transcends architecture into pure poetry.</p>
-      <div class="arch-tags">
-        <span class="arch-tag">UNESCO World Heritage</span>
-        <span class="arch-tag">Mughal Architecture</span>
-        <span class="arch-tag">7 Wonders of the World</span>
-        <span class="arch-tag">Symbol of Love</span>
+  </section>
+
+  <!-- FESTIVALS -->
+  <section id="festivals">
+    <p class="section-label" style="color: var(--gold);">✦ The Calendar of Joy ✦</p>
+    <h2 class="section-title">Festivals of India</h2>
+    <div class="section-divider"></div>
+    <p class="section-intro">In India, every season, every moon, every harvest is a reason for celebration. With 30+
+      major festivals, India is perpetually in festivity.</p>
+
+    <div class="festivals-row reveal">
+      <div class="fest-card f1">
+        <div class="fest-card-bg"></div>
+        <span class="fest-icon">🪔</span>
+        <h3 class="fest-name">Diwali</h3>
+        <p class="fest-region">Pan-India · October–November</p>
+        <p class="fest-desc">The Festival of Lights. Millions of clay lamps (diyas) illuminate homes and hearts on the
+          darkest night of autumn. Celebrates Lord Rama's return, the triumph of light over darkness, knowledge over
+          ignorance, and good over evil.</p>
+      </div>
+      <div class="fest-card f2">
+        <div class="fest-card-bg"></div>
+        <span class="fest-icon">🌈</span>
+        <h3 class="fest-name">Holi</h3>
+        <p class="fest-region">North India · February–March</p>
+        <p class="fest-desc">The Festival of Colors. Streets transform into living paintings as people shower each other
+          with vibrant powder and water. Heralds spring, celebrates the eternal love of Radha-Krishna, and the victory
+          of devotion over pride.</p>
+      </div>
+      <div class="fest-card f3">
+        <div class="fest-card-bg"></div>
+        <span class="fest-icon">🥁</span>
+        <h3 class="fest-name">Durga Puja</h3>
+        <p class="fest-region">West Bengal · September–October</p>
+        <p class="fest-desc">Kolkata transforms into the world's largest open-air art gallery. Elaborate clay idols of
+          Goddess Durga are worshipped for 10 days with music, dance, and communal feasting — a UNESCO Intangible
+          Cultural Heritage.</p>
+      </div>
+      <div class="fest-card f4">
+        <div class="fest-card-bg"></div>
+        <span class="fest-icon">🐘</span>
+        <h3 class="fest-name">Onam</h3>
+        <p class="fest-region">Kerala · August–September</p>
+        <p class="fest-desc">Kerala's harvest festival of 10 days — featuring the spectacular Pookalam (flower carpet),
+          Vallam Kali (snake boat races), classical Kathakali performances, and feasts on banana leaves with 26
+          traditional dishes.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="arch-mini-grid reveal">
-    <div class="arch-mini">
-      <span class="mini-icon">🏯</span>
-      <h4>Rajput Forts</h4>
-      <p>Amber, Mehrangarh, Chittorgarh — medieval citadels of war, artistry, and royal life carved into Rajasthan's rugged landscape.</p>
-    </div>
-    <div class="arch-mini">
-      <span class="mini-icon">🛕</span>
-      <h4>Dravidian Temples</h4>
-      <p>The towering gopurams of Madurai Meenakshi and Thanjavur Brihadeeswarar — South India's sky-piercing granite devotion.</p>
-    </div>
-    <div class="arch-mini">
-      <span class="mini-icon">⛩️</span>
-      <h4>Rock-Cut Caves</h4>
-      <p>Ajanta, Ellora, Elephanta — Buddhist, Hindu, and Jain masterpieces carved directly from living rock over centuries.</p>
-    </div>
-    <div class="arch-mini">
-      <span class="mini-icon">🏛️</span>
-      <h4>Stepwells (Vav)</h4>
-      <p>Gujarat's Rani ki Vav — a subterranean cathedral of water, with 500 intricate sculptures descending seven stories below earth.</p>
-    </div>
-  </div>
-</section>
+  <!-- CUISINE -->
+  <section id="cuisine">
+    <p class="section-label">✦ A Feast for the Senses ✦</p>
+    <h2 class="section-title">The Flavors of India</h2>
+    <div class="section-divider"></div>
+    <p class="section-intro">Indian cuisine is not a cuisine — it is thousands of cuisines shaped by geography,
+      religion, season, and six thousand years of culinary evolution.</p>
 
-<!-- FESTIVALS -->
-<section id="festivals">
-  <p class="section-label" style="color: var(--gold);">✦ The Calendar of Joy ✦</p>
-  <h2 class="section-title">Festivals of India</h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">In India, every season, every moon, every harvest is a reason for celebration. With 30+ major festivals, India is perpetually in festivity.</p>
-
-  <div class="festivals-row reveal">
-    <div class="fest-card f1">
-      <div class="fest-card-bg"></div>
-      <span class="fest-icon">🪔</span>
-      <h3 class="fest-name">Diwali</h3>
-      <p class="fest-region">Pan-India · October–November</p>
-      <p class="fest-desc">The Festival of Lights. Millions of clay lamps (diyas) illuminate homes and hearts on the darkest night of autumn. Celebrates Lord Rama's return, the triumph of light over darkness, knowledge over ignorance, and good over evil.</p>
-    </div>
-    <div class="fest-card f2">
-      <div class="fest-card-bg"></div>
-      <span class="fest-icon">🌈</span>
-      <h3 class="fest-name">Holi</h3>
-      <p class="fest-region">North India · February–March</p>
-      <p class="fest-desc">The Festival of Colors. Streets transform into living paintings as people shower each other with vibrant powder and water. Heralds spring, celebrates the eternal love of Radha-Krishna, and the victory of devotion over pride.</p>
-    </div>
-    <div class="fest-card f3">
-      <div class="fest-card-bg"></div>
-      <span class="fest-icon">🥁</span>
-      <h3 class="fest-name">Durga Puja</h3>
-      <p class="fest-region">West Bengal · September–October</p>
-      <p class="fest-desc">Kolkata transforms into the world's largest open-air art gallery. Elaborate clay idols of Goddess Durga are worshipped for 10 days with music, dance, and communal feasting — a UNESCO Intangible Cultural Heritage.</p>
-    </div>
-    <div class="fest-card f4">
-      <div class="fest-card-bg"></div>
-      <span class="fest-icon">🐘</span>
-      <h3 class="fest-name">Onam</h3>
-      <p class="fest-region">Kerala · August–September</p>
-      <p class="fest-desc">Kerala's harvest festival of 10 days — featuring the spectacular Pookalam (flower carpet), Vallam Kali (snake boat races), classical Kathakali performances, and feasts on banana leaves with 26 traditional dishes.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CUISINE -->
-<section id="cuisine">
-  <p class="section-label">✦ A Feast for the Senses ✦</p>
-  <h2 class="section-title">The Flavors of India</h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">Indian cuisine is not a cuisine — it is thousands of cuisines shaped by geography, religion, season, and six thousand years of culinary evolution.</p>
-
-  <div class="cuisine-layout">
-    <div class="cuisine-intro-box reveal">
-      <h3>Six Tastes, Infinite Traditions</h3>
-      <p>Ayurveda describes six tastes — Sweet, Sour, Salty, Pungent, Bitter, and Astringent — and Indian cooking is the world's most sophisticated system for balancing all six in every meal.</p>
-      <p>Each region tells its story through spice, technique, and ingredient.</p>
-      <div class="cuisine-regions">
-        <div class="cuisine-region-tag"><span>🌾</span> North India — Rich gravies, tandoor bread</div>
-        <div class="cuisine-region-tag"><span>🌴</span> South India — Rice, coconut, tamarind</div>
-        <div class="cuisine-region-tag"><span>🌊</span> Coastal India — Seafood, coconut milk</div>
-        <div class="cuisine-region-tag"><span>🌶️</span> East India — Mustard oil, fish, sweets</div>
-        <div class="cuisine-region-tag"><span>🫙</span> West India — Tangy, sweet-spicy balance</div>
+    <div class="cuisine-layout">
+      <div class="cuisine-intro-box reveal">
+        <h3>Six Tastes, Infinite Traditions</h3>
+        <p>Ayurveda describes six tastes — Sweet, Sour, Salty, Pungent, Bitter, and Astringent — and Indian cooking is
+          the world's most sophisticated system for balancing all six in every meal.</p>
+        <p>Each region tells its story through spice, technique, and ingredient.</p>
+        <div class="cuisine-regions">
+          <div class="cuisine-region-tag"><span>🌾</span> North India — Rich gravies, tandoor bread</div>
+          <div class="cuisine-region-tag"><span>🌴</span> South India — Rice, coconut, tamarind</div>
+          <div class="cuisine-region-tag"><span>🌊</span> Coastal India — Seafood, coconut milk</div>
+          <div class="cuisine-region-tag"><span>🌶️</span> East India — Mustard oil, fish, sweets</div>
+          <div class="cuisine-region-tag"><span>🫙</span> West India — Tangy, sweet-spicy balance</div>
+        </div>
+      </div>
+      <div class="dish-grid reveal">
+        <div class="dish-card">
+          <span class="dish-icon">🍛</span>
+          <h3 class="dish-name">Biryani</h3>
+          <p class="dish-origin">Hyderabad / Lucknow</p>
+          <p class="dish-desc">Fragrant basmati rice slow-cooked in a sealed pot (dum) with marinated meat, saffron, and
+            whole spices. A Mughal gift to India, now claimed and perfected by every city.</p>
+        </div>
+        <div class="dish-card">
+          <span class="dish-icon">🫓</span>
+          <h3 class="dish-name">Masala Dosa</h3>
+          <p class="dish-origin">Karnataka / Tamil Nadu</p>
+          <p class="dish-desc">Crisp, paper-thin rice-lentil crêpe filled with spiced potato, served with coconut
+            chutney and sambar. A breakfast that has conquered the world from South Indian kitchens.</p>
+        </div>
+        <div class="dish-card">
+          <span class="dish-icon">🍲</span>
+          <h3 class="dish-name">Dal Makhani</h3>
+          <p class="dish-origin">Punjab</p>
+          <p class="dish-desc">Black lentils slow-cooked overnight with tomatoes, cream, and butter — Punjabi warmth in
+            a bowl. Born in the dhabas (roadside kitchens) of the wheat belt, now on Michelin-starred menus.</p>
+        </div>
+        <div class="dish-card">
+          <span class="dish-icon">🍮</span>
+          <h3 class="dish-name">Rasgulla</h3>
+          <p class="dish-origin">West Bengal / Odisha</p>
+          <p class="dish-desc">Pillowy spheres of fresh chenna (cottage cheese) simmered in light sugar syrup —
+            delicate, airy, and ephemeral. A Bengali sweet that sparked a historical debate over its origins.</p>
+        </div>
+        <div class="dish-card">
+          <span class="dish-icon">🌮</span>
+          <h3 class="dish-name">Rogan Josh</h3>
+          <p class="dish-origin">Kashmir</p>
+          <p class="dish-desc">Aromatic lamb braised in Kashmiri red chillies, whole spices, and yogurt — a Wazwan
+            tradition that transforms meat into a meditation on spice, patience, and mountain air.</p>
+        </div>
+        <div class="dish-card">
+          <span class="dish-icon">🥘</span>
+          <h3 class="dish-name">Dhokla & Thepla</h3>
+          <p class="dish-origin">Gujarat</p>
+          <p class="dish-desc">Gujarat's genius for vegetarian cooking — fermented chickpea cakes steamed to pillowy
+            lightness (dhokla) and spiced flatbreads rolled thin (thepla). Simple, nourishing, and endlessly satisfying.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="dish-grid reveal">
-      <div class="dish-card">
-        <span class="dish-icon">🍛</span>
-        <h3 class="dish-name">Biryani</h3>
-        <p class="dish-origin">Hyderabad / Lucknow</p>
-        <p class="dish-desc">Fragrant basmati rice slow-cooked in a sealed pot (dum) with marinated meat, saffron, and whole spices. A Mughal gift to India, now claimed and perfected by every city.</p>
-      </div>
-      <div class="dish-card">
-        <span class="dish-icon">🫓</span>
-        <h3 class="dish-name">Masala Dosa</h3>
-        <p class="dish-origin">Karnataka / Tamil Nadu</p>
-        <p class="dish-desc">Crisp, paper-thin rice-lentil crêpe filled with spiced potato, served with coconut chutney and sambar. A breakfast that has conquered the world from South Indian kitchens.</p>
-      </div>
-      <div class="dish-card">
-        <span class="dish-icon">🍲</span>
-        <h3 class="dish-name">Dal Makhani</h3>
-        <p class="dish-origin">Punjab</p>
-        <p class="dish-desc">Black lentils slow-cooked overnight with tomatoes, cream, and butter — Punjabi warmth in a bowl. Born in the dhabas (roadside kitchens) of the wheat belt, now on Michelin-starred menus.</p>
-      </div>
-      <div class="dish-card">
-        <span class="dish-icon">🍮</span>
-        <h3 class="dish-name">Rasgulla</h3>
-        <p class="dish-origin">West Bengal / Odisha</p>
-        <p class="dish-desc">Pillowy spheres of fresh chenna (cottage cheese) simmered in light sugar syrup — delicate, airy, and ephemeral. A Bengali sweet that sparked a historical debate over its origins.</p>
-      </div>
-      <div class="dish-card">
-        <span class="dish-icon">🌮</span>
-        <h3 class="dish-name">Rogan Josh</h3>
-        <p class="dish-origin">Kashmir</p>
-        <p class="dish-desc">Aromatic lamb braised in Kashmiri red chillies, whole spices, and yogurt — a Wazwan tradition that transforms meat into a meditation on spice, patience, and mountain air.</p>
-      </div>
-      <div class="dish-card">
-        <span class="dish-icon">🥘</span>
-        <h3 class="dish-name">Dhokla & Thepla</h3>
-        <p class="dish-origin">Gujarat</p>
-        <p class="dish-desc">Gujarat's genius for vegetarian cooking — fermented chickpea cakes steamed to pillowy lightness (dhokla) and spiced flatbreads rolled thin (thepla). Simple, nourishing, and endlessly satisfying.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- STATES -->
-<section id="states">
-  <p class="section-label">✦ A Nation of Nations ✦</p>
-  <h2 class="section-title">The States of India</h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">India's 28 states and 8 Union Territories are each distinct civilizations — different languages, foods, music, climate, and heritage.</p>
+  <!-- STATES -->
+  <section id="states">
+    <p class="section-label">✦ A Nation of Nations ✦</p>
+    <h2 class="section-title">The States of India</h2>
+    <div class="section-divider"></div>
+    <p class="section-intro">India's 28 states and 8 Union Territories are each distinct civilizations — different
+      languages, foods, music, climate, and heritage.</p>
 
-  <div class="states-grid reveal">
-    <div class="state-tile"><span class="state-emoji">🏔️</span><div class="state-name">Jammu & Kashmir</div><div class="state-capital">Srinagar</div></div>
-    <div class="state-tile"><span class="state-emoji">🏔️</span><div class="state-name">Himachal Pradesh</div><div class="state-capital">Shimla</div></div>
-    <div class="state-tile"><span class="state-emoji">🌾</span><div class="state-name">Punjab</div><div class="state-capital">Chandigarh</div></div>
-    <div class="state-tile"><span class="state-emoji">🌿</span><div class="state-name">Uttarakhand</div><div class="state-capital">Dehradun</div></div>
-    <div class="state-tile"><span class="state-emoji">🏛️</span><div class="state-name">Haryana</div><div class="state-capital">Chandigarh</div></div>
-    <div class="state-tile"><span class="state-emoji">🕌</span><div class="state-name">Delhi</div><div class="state-capital">New Delhi</div></div>
-    <div class="state-tile"><span class="state-emoji">🏰</span><div class="state-name">Rajasthan</div><div class="state-capital">Jaipur</div></div>
-    <div class="state-tile"><span class="state-emoji">🌆</span><div class="state-name">Uttar Pradesh</div><div class="state-capital">Lucknow</div></div>
-    <div class="state-tile"><span class="state-emoji">🌳</span><div class="state-name">Bihar</div><div class="state-capital">Patna</div></div>
-    <div class="state-tile"><span class="state-emoji">🐯</span><div class="state-name">Madhya Pradesh</div><div class="state-capital">Bhopal</div></div>
-    <div class="state-tile"><span class="state-emoji">💎</span><div class="state-name">Jharkhand</div><div class="state-capital">Ranchi</div></div>
-    <div class="state-tile"><span class="state-emoji">🎨</span><div class="state-name">West Bengal</div><div class="state-capital">Kolkata</div></div>
-    <div class="state-tile"><span class="state-emoji">🌊</span><div class="state-name">Odisha</div><div class="state-capital">Bhubaneswar</div></div>
-    <div class="state-tile"><span class="state-emoji">🌶️</span><div class="state-name">Chhattisgarh</div><div class="state-capital">Raipur</div></div>
-    <div class="state-tile"><span class="state-emoji">🏭</span><div class="state-name">Gujarat</div><div class="state-capital">Gandhinagar</div></div>
-    <div class="state-tile"><span class="state-emoji">🌊</span><div class="state-name">Maharashtra</div><div class="state-capital">Mumbai</div></div>
-    <div class="state-tile"><span class="state-emoji">💻</span><div class="state-name">Telangana</div><div class="state-capital">Hyderabad</div></div>
-    <div class="state-tile"><span class="state-emoji">🕍</span><div class="state-name">Andhra Pradesh</div><div class="state-capital">Amaravati</div></div>
-    <div class="state-tile"><span class="state-emoji">🛕</span><div class="state-name">Karnataka</div><div class="state-capital">Bengaluru</div></div>
-    <div class="state-tile"><span class="state-emoji">🌴</span><div class="state-name">Kerala</div><div class="state-capital">Thiruvananthapuram</div></div>
-    <div class="state-tile"><span class="state-emoji">🎭</span><div class="state-name">Tamil Nadu</div><div class="state-capital">Chennai</div></div>
-    <div class="state-tile"><span class="state-emoji">🌿</span><div class="state-name">Goa</div><div class="state-capital">Panaji</div></div>
-    <div class="state-tile"><span class="state-emoji">🐘</span><div class="state-name">Assam</div><div class="state-capital">Dispur</div></div>
-    <div class="state-tile"><span class="state-emoji">🏔️</span><div class="state-name">Meghalaya</div><div class="state-capital">Shillong</div></div>
-    <div class="state-tile"><span class="state-emoji">🌺</span><div class="state-name">Manipur</div><div class="state-capital">Imphal</div></div>
-  </div>
-</section>
+    <div class="states-search-wrap reveal">
+      <label class="states-search-label" for="stateSearch">Find a state</label>
+      <input type="text" id="stateSearch" class="states-search-input" placeholder="Search by state or capital..."
+        aria-label="Search states by name or capital">
+      <p id="stateSearchEmpty" class="states-search-empty" hidden>No matching state found.</p>
+    </div>
 
-<!-- PHILOSOPHY -->
-<section id="philosophy">
-  <p class="section-label" style="color: var(--gold);">✦ Words of the Ages ✦</p>
-  <h2 class="section-title" style="color: var(--ivory);">Wisdom of India</h2>
-  <div class="section-divider"></div>
-  <p class="section-intro" style="color: rgba(245,230,200,0.6);">India's greatest contribution to humanity may be its philosophy — a living tradition of inquiry into truth, consciousness, and the good life.</p>
+    <div class="states-grid reveal">
+      <div class="state-tile"><span class="state-emoji">🏔️</span>
+        <div class="state-name">Jammu & Kashmir</div>
+        <div class="state-capital">Srinagar</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🏔️</span>
+        <div class="state-name">Himachal Pradesh</div>
+        <div class="state-capital">Shimla</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌾</span>
+        <div class="state-name">Punjab</div>
+        <div class="state-capital">Chandigarh</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌿</span>
+        <div class="state-name">Uttarakhand</div>
+        <div class="state-capital">Dehradun</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🏛️</span>
+        <div class="state-name">Haryana</div>
+        <div class="state-capital">Chandigarh</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🕌</span>
+        <div class="state-name">Delhi</div>
+        <div class="state-capital">New Delhi</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🏰</span>
+        <div class="state-name">Rajasthan</div>
+        <div class="state-capital">Jaipur</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌆</span>
+        <div class="state-name">Uttar Pradesh</div>
+        <div class="state-capital">Lucknow</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌳</span>
+        <div class="state-name">Bihar</div>
+        <div class="state-capital">Patna</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🐯</span>
+        <div class="state-name">Madhya Pradesh</div>
+        <div class="state-capital">Bhopal</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">💎</span>
+        <div class="state-name">Jharkhand</div>
+        <div class="state-capital">Ranchi</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🎨</span>
+        <div class="state-name">West Bengal</div>
+        <div class="state-capital">Kolkata</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌊</span>
+        <div class="state-name">Odisha</div>
+        <div class="state-capital">Bhubaneswar</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌶️</span>
+        <div class="state-name">Chhattisgarh</div>
+        <div class="state-capital">Raipur</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🏭</span>
+        <div class="state-name">Gujarat</div>
+        <div class="state-capital">Gandhinagar</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌊</span>
+        <div class="state-name">Maharashtra</div>
+        <div class="state-capital">Mumbai</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">💻</span>
+        <div class="state-name">Telangana</div>
+        <div class="state-capital">Hyderabad</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🕍</span>
+        <div class="state-name">Andhra Pradesh</div>
+        <div class="state-capital">Amaravati</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🛕</span>
+        <div class="state-name">Karnataka</div>
+        <div class="state-capital">Bengaluru</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌴</span>
+        <div class="state-name">Kerala</div>
+        <div class="state-capital">Thiruvananthapuram</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🎭</span>
+        <div class="state-name">Tamil Nadu</div>
+        <div class="state-capital">Chennai</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌿</span>
+        <div class="state-name">Goa</div>
+        <div class="state-capital">Panaji</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🐘</span>
+        <div class="state-name">Assam</div>
+        <div class="state-capital">Dispur</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🏔️</span>
+        <div class="state-name">Meghalaya</div>
+        <div class="state-capital">Shillong</div>
+      </div>
+      <div class="state-tile"><span class="state-emoji">🌺</span>
+        <div class="state-name">Manipur</div>
+        <div class="state-capital">Imphal</div>
+      </div>
+    </div>
+  </section>
 
-  <div class="quote-grid reveal">
-    <div class="quote-card">
-      <p class="quote-text">Ahimsa Paramo Dharma — Non-violence is the highest moral virtue. All life is sacred, and the measure of civilization is its compassion toward every creature.</p>
-      <p class="quote-source">✦ The Mahabharata</p>
-    </div>
-    <div class="quote-card">
-      <p class="quote-text">Vasudhaiva Kutumbakam — The whole world is one family. India's ancient insight that no border can contain the brotherhood of all humankind.</p>
-      <p class="quote-source">✦ Maha Upanishad</p>
-    </div>
-    <div class="quote-card">
-      <p class="quote-text">Satyam Shivam Sundaram — Truth is God, God is Beauty. The Vedic trinity that unites philosophy, spirituality, and aesthetics into one vision of the divine.</p>
-      <p class="quote-source">✦ Vedic Philosophy</p>
-    </div>
-    <div class="quote-card">
-      <p class="quote-text">Live as if you were to die tomorrow. Learn as if you were to live forever. Wisdom as practical as it is timeless — Gandhi's compass for a purposeful life.</p>
-      <p class="quote-source">✦ Mahatma Gandhi</p>
-    </div>
-    <div class="quote-card">
-      <p class="quote-text">India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great-grandmother of tradition.</p>
-      <p class="quote-source">✦ Mark Twain</p>
-    </div>
-    <div class="quote-card">
-      <p class="quote-text">We owe a lot to the Indians who taught us how to count, without which no worthwhile scientific discovery could have been made. — Albert Einstein, on India's contribution to mathematics.</p>
-      <p class="quote-source">✦ Albert Einstein</p>
-    </div>
-  </div>
-</section>
+  <!-- PHILOSOPHY -->
+  <section id="philosophy">
+    <p class="section-label" style="color: var(--gold);">✦ Words of the Ages ✦</p>
+    <h2 class="section-title" style="color: var(--ivory);">Wisdom of India</h2>
+    <div class="section-divider"></div>
+    <p class="section-intro" style="color: rgba(245,230,200,0.6);">India's greatest contribution to humanity may be its
+      philosophy — a living tradition of inquiry into truth, consciousness, and the good life.</p>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <h3>भारत Bharat</h3>
-      <p>An exploration of India's 5,000-year civilization — its history, art, philosophy, and the living traditions that make it one of humanity's most extraordinary stories.</p>
+    <div class="quote-grid reveal">
+      <div class="quote-card">
+        <p class="quote-text">Ahimsa Paramo Dharma — Non-violence is the highest moral virtue. All life is sacred, and
+          the measure of civilization is its compassion toward every creature.</p>
+        <p class="quote-source">✦ The Mahabharata</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">Vasudhaiva Kutumbakam — The whole world is one family. India's ancient insight that no
+          border can contain the brotherhood of all humankind.</p>
+        <p class="quote-source">✦ Maha Upanishad</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">Satyam Shivam Sundaram — Truth is God, God is Beauty. The Vedic trinity that unites
+          philosophy, spirituality, and aesthetics into one vision of the divine.</p>
+        <p class="quote-source">✦ Vedic Philosophy</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">Live as if you were to die tomorrow. Learn as if you were to live forever. Wisdom as
+          practical as it is timeless — Gandhi's compass for a purposeful life.</p>
+        <p class="quote-source">✦ Mahatma Gandhi</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">India is the cradle of the human race, the birthplace of human speech, the mother of
+          history, the grandmother of legend, and the great-grandmother of tradition.</p>
+        <p class="quote-source">✦ Mark Twain</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">We owe a lot to the Indians who taught us how to count, without which no worthwhile
+          scientific discovery could have been made. — Albert Einstein, on India's contribution to mathematics.</p>
+        <p class="quote-source">✦ Albert Einstein</p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="#history">History</a></li>
-        <li><a href="#culture">Culture</a></li>
-        <li><a href="#architecture">Architecture</a></li>
-        <li><a href="#festivals">Festivals</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Discover</h4>
-      <ul>
-        <li><a href="#cuisine">Cuisine</a></li>
-        <li><a href="#states">States</a></li>
-        <li><a href="#philosophy">Philosophy</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Heritage</h4>
-      <ul>
-        <li><a href="#">UNESCO Sites</a></li>
-        <li><a href="#">Classical Arts</a></li>
-        <li><a href="#">Sacred Rivers</a></li>
-        <li><a href="#">Languages</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Jai Hind · जय हिन्द · A Tribute to the Eternal Land</p>
-    <div class="footer-tricolor">
-      <div class="ftc ftc-s"></div>
-      <div class="ftc ftc-w"></div>
-      <div class="ftc ftc-g"></div>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>भारत Bharat</h3>
+        <p>An exploration of India's 5,000-year civilization — its history, art, philosophy, and the living traditions
+          that make it one of humanity's most extraordinary stories.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#history">History</a></li>
+          <li><a href="#culture">Culture</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#festivals">Festivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="#cuisine">Cuisine</a></li>
+          <li><a href="#states">States</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Heritage</h4>
+        <ul>
+          <li><a href="#">UNESCO Sites</a></li>
+          <li><a href="#">Classical Arts</a></li>
+          <li><a href="#">Sacred Rivers</a></li>
+          <li><a href="#">Languages</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Jai Hind · जय हिन्द · A Tribute to the Eternal Land</p>
+      <div class="footer-tricolor">
+        <div class="ftc ftc-s"></div>
+        <div class="ftc ftc-w"></div>
+        <div class="ftc ftc-g"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -26,30 +26,6 @@
     background: var(--ivory);
     color: var(--text-dark);
     overflow-x: hidden;
-    cursor: none;
-  }
-
-  /* Custom Cursor */
-  .cursor {
-    width: 12px; height: 12px;
-    background: var(--saffron);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 10000;
-    transition: transform 0.15s ease, opacity 0.2s;
-    transform: translate(-50%, -50%);
-  }
-  .cursor-ring {
-    width: 36px; height: 36px;
-    border: 1.5px solid var(--gold);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.4s cubic-bezier(.25,.46,.45,.94);
-    transform: translate(-50%, -50%);
-    opacity: 0.6;
   }
 
   /* NAV */
@@ -504,7 +480,7 @@
     text-transform: uppercase;
     margin-top: 6px;
   }
-  .arch-info { }
+  /* .arch-info { } */
   .arch-info h3 {
     font-family: 'Yatra One', serif;
     font-size: 2.2rem;
@@ -705,12 +681,55 @@
     padding: 100px 60px;
     background: linear-gradient(180deg, var(--cream) 0%, var(--ivory) 100%);
   }
+  .states-search-wrap {
+    max-width: 620px;
+    margin: 0 auto 26px;
+    text-align: center;
+  }
+  .states-search-label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--saffron);
+  }
+  .states-search-input {
+    width: min(100%, 620px);
+    padding: 14px 18px;
+    border: 1px solid rgba(107, 15, 26, 0.35);
+    background: rgba(255, 253, 248, 0.85);
+    color: var(--maroon);
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .states-search-input::placeholder {
+    color: rgba(92, 61, 46, 0.7);
+  }
+  .states-search-input:focus {
+    border-color: var(--saffron);
+    box-shadow: 0 0 0 3px rgba(232, 98, 26, 0.12);
+  }
+  .states-search-empty {
+    margin-top: 12px;
+    color: var(--maroon);
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
   .states-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     max-width: 1100px;
     margin: 0 auto;
+  }
+  .state-tile.hidden-by-search {
+    display: none;
   }
   .state-tile {
     padding: 20px 16px;
